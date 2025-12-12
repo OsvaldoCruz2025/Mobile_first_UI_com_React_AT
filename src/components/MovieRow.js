@@ -1,26 +1,68 @@
 import React from "react";
+import "./Filmes.css";
 
-function MovieRow({ title }) {
-  const movies = [
-    "https://picsum.photos/200/300?1",
-    "https://picsum.photos/200/300?2",
-    "https://picsum.photos/200/300?3",
-    "https://picsum.photos/200/300?4",
-    "https://picsum.photos/200/300?5",
+// Imagens
+import top1 from "../img/top1.jpg";
+import top2 from "../img/top2.jpg";
+import top3 from "../img/top3.jpg";
+import top4 from "../img/top4.jpg";
+import top5 from "../img/top5.jpg";
+
+import acao1 from "../img/acao1.jpg";
+import acao2 from "../img/acao2.jpg";
+import acao3 from "../img/acao3.jpg";
+import acao4 from "../img/acao4.jpg";
+import acao5 from "../img/acao5.jpg";
+
+import comed1 from "../img/comed1.jpg";
+import comed2 from "../img/comed2.jpg";
+import comed3 from "../img/comed3.jpg";
+import comed4 from "../img/comed4.jpg";
+import comed5 from "../img/comed5.jpg";
+
+export default function MovieRow({ title }) {
+  const filmesEmAlta = [
+    { id: 1, titulo: "Alvo da Máfia", imagem: top1 },
+    { id: 2, titulo: "Zona de Risco", imagem: top2 },
+    { id: 3, titulo: "O Troll da Montanha 2", imagem: top3 },
+    { id: 4, titulo: "Gladiador II", imagem: top4 },
+    { id: 5, titulo: "Desejo de Matar", imagem: top5 },
   ];
 
+  const filmesDeAcao = [
+    { id: 1, titulo: "Operação Fronteira", imagem: acao1 },
+    { id: 2, titulo: "Hanna", imagem: acao2 },
+    { id: 3, titulo: "A Mãe", imagem: acao3 },
+    { id: 4, titulo: "Resgate 2", imagem: acao4 },
+    { id: 5, titulo: "Maze Runner", imagem: acao5 },
+  ];
+
+  const filmesDeComedia = [
+    { id: 1, titulo: "Um Ninja da Pesada", imagem: comed1 },
+    { id: 2, titulo: "O Máskara", imagem: comed2 },
+    { id: 3, titulo: "O Agente Faixa-Preta", imagem: comed3 },
+    { id: 4, titulo: "De Volta à Ação", imagem: comed4 },
+    { id: 5, titulo: "Bad Boys Para Sempre", imagem: comed5 },
+  ];
+
+  let filmes = [];
+  if (title === "Em Alta") filmes = filmesEmAlta;
+  else if (title === "Filmes de Ação") filmes = filmesDeAcao;
+  else if (title === "Filmes de Comédia") filmes = filmesDeComedia;
+
   return (
-    <section className="movie-row container">
-      <h2>{title}</h2>
-      <div className="row movie-list">
-        {movies.map((m, i) => (
-          <div className="col-2 movie-item" key={i}>
-            <img src={m} alt={`Filme ${i}`} />
+    <section className="filmes">
+      <h2 className="filmes-titulo">{title}</h2>
+      <div className="filmes-lista">
+        {filmes.map((filme) => (
+          <div className="filme-card" key={filme.id}>
+            <img src={filme.imagem} alt={filme.titulo} className="filme-img" />
+            <div className="filme-info">
+              <h3>{filme.titulo}</h3>
+            </div>
           </div>
         ))}
       </div>
     </section>
   );
 }
-
-export default MovieRow;

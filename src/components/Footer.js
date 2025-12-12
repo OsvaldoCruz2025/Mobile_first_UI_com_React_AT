@@ -1,23 +1,28 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Box, Typography } from "@mui/material";
 
 function Footer() {
   return (
-    <footer className="footer container">
-      <div className="row">
-        <div className="col footer-menu">
-          <a href="#">Sobre</a>
-          <a href="#">Ajuda</a>
-          <a href="#">Privacidade</a>
-          <a href="#">Contato</a>
-        </div>
-        <div className="col footer-social">
-          <FaFacebook />
-          <FaInstagram />
-          <FaTwitter />
-        </div>
+    <Box
+      component="footer"
+      sx={{
+        backgroundColor: "#141414",
+        color: "white",
+        textAlign: "center",
+        padding: "30px 0",
+        mt: 4,
+      }}
+    >
+      <Typography variant="body1" sx={{ mb: 2 }}>
+        © 2025 Netflix Clone — Projeto React
+      </Typography>
+      <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
+        <FaFacebook />
+        <FaInstagram />
+        <FaTwitter />
       </div>
-    </footer>
+    </Box>
   );
 }
 

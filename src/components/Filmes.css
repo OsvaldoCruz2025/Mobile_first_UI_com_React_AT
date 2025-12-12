@@ -1,0 +1,91 @@
+/* =========================================
+   SEÇÃO DE FILMES
+========================================= */
+.filmes {
+  margin: 40px 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Título da seção */
+.filmes-titulo {
+  color: white;
+  font-size: 1.8rem;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Lista horizontal de filmes */
+.filmes-lista {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 40px 20px;
+  width: 100%;
+}
+
+.filmes-lista::-webkit-scrollbar {
+  display: none; /* esconde a barra de rolagem */
+}
+
+/* Cartão de filme */
+.filme-card {
+  flex: 0 0 18%;
+  max-width: 18%;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filme-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.filme-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.filme-info {
+  text-align: center;
+  color: #fff;
+  margin-top: 8px;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+@media (max-width: 1200px) {
+  .filme-card {
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
+}
+
+@media (max-width: 900px) {
+  .filme-card {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .filme-card {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .filmes-titulo {
+    font-size: 1.3rem;
+    margin-left: 20px;
+  }
+
+  .filmes-lista {
+    padding: 0 20px;
+  }
+}

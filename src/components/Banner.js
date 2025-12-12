@@ -1,5 +1,6 @@
 import React from "react";
-import "../components/Banner.css"; // IMPORTANTE: garante que o estilo seja aplicado corretamente
+import "../components/Banner.css";
+import { Button, TextField } from "@mui/material";
 
 function Banner() {
   return (
@@ -9,20 +10,29 @@ function Banner() {
           <h1>Filmes, séries e muito mais, sem limites</h1>
           <p>A partir de R$ 20,90. Cancele quando quiser.</p>
           <p className="texto-secundario">
-            Quer assistir? Informe seu email para criar ou reiniciar sua
+            Quer assistir? Informe seu e-mail para criar ou reiniciar sua
             assinatura.
           </p>
 
           <form className="banner-form">
-            <input
+            <TextField
               type="email"
-              placeholder="Email"
-              className="email-input"
+              label="Email"
+              variant="outlined"
+              sx={{
+                backgroundColor: "white",
+                borderRadius: "5px",
+                width: "80%",
+              }}
               required
             />
-            <button type="submit" className="banner-btn">
+            <Button
+              variant="contained"
+              color="error"
+              sx={{ fontWeight: "bold", padding: "14px 30px" }}
+            >
               Vamos lá &gt;
-            </button>
+            </Button>
           </form>
         </div>
       </div>
