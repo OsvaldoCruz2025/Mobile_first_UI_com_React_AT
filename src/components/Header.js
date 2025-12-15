@@ -23,14 +23,13 @@ export default function Header() {
   return (
     <AppBar position="static" sx={{ backgroundColor: "#000000" }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
-        
         {/* LOGO */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <img
             src={logo}
             alt="Netflix Logo"
             style={{
-              width: "250px", 
+              width: "250px",
               height: "auto",
               cursor: "pointer",
             }}

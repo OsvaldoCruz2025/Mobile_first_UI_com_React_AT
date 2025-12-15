@@ -1,7 +1,6 @@
 import React from "react";
 import "./Filmes.css";
 
-
 import top1 from "../img/top1.jpg";
 import top2 from "../img/top2.jpg";
 import top3 from "../img/top3.jpg";
@@ -43,7 +42,6 @@ export default function Filmes() {
     { id: 4, titulo: "De Volta à Ação", imagem: comed4 },
     { id: 5, titulo: "Bad Boys Para Sempre", imagem: comed5 },
   ];
-
 
   let filmes = [];
   if (title === "Em Alta") filmes = filmesEmAlta;
