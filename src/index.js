@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "bootstrap/dist/css/bootstrap.min.css"; // opcional, caso queira usar Bootstrap junto
-import "@mui/material/styles"; // MUI
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@mui/material/styles"; 
 import App from "./App";
 
 const rootElement = document.getElementById("root");

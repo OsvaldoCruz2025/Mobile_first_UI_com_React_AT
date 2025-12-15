@@ -23,6 +23,7 @@ export default function Header() {
   return (
     <AppBar position="static" sx={{ backgroundColor: "#000000" }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
+        
         {/* LOGO */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <img

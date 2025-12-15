@@ -1,7 +1,7 @@
 import React from "react";
 import "./Filmes.css";
 
-// Imagens
+
 import top1 from "../img/top1.jpg";
 import top2 from "../img/top2.jpg";
 import top3 from "../img/top3.jpg";

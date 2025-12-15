@@ -1,6 +1,4 @@
-/* =========================================
-   BASE / GLOBAL
-========================================= */
+/* BASE / GLOBAL */
 body,
 html {
   margin: 0;
@@ -22,9 +20,7 @@ body {
   height: 100%;
 }
 
-/* =========================================
-   GRID DO ZERO (Container, Row, Col)
-========================================= */
+/* GRID DO ZERO (Container, Row, Col) */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -51,14 +47,12 @@ body {
   }
 }
 
-/* =========================================
-   CABEÇALHO AJUSTADO E CENTRALIZADO
-========================================= */
+/*  CABEÇALHO AJUSTADO E CENTRALIZADO */
 .header {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 15 25px; /* diminui o espaçamento vertical */
+  padding: 15 25px; 
   background: transparent;
   color: white;
   z-index: 20;
@@ -130,9 +124,7 @@ body {
   z-index: 25;
 }
 
-/* =========================================
-   RESPONSIVIDADE MOBILE
-========================================= */
+/*  RESPONSIVIDADE MOBILE */
 @media (max-width: 900px) {
   .header .row {
     justify-content: center;
@@ -203,9 +195,7 @@ body {
   }
 }
 
-/* =========================================
-   BANNER
-========================================= */
+/*  BANNER */
 .banner {
   position: relative;
   background-color: #080808;
@@ -280,12 +270,7 @@ body {
   background-color: #f40612;
 }
 
-/* =========================================
-   MOVIE ROW AJUSTADO (ESTILO NETFLIX)
-========================================= */
-/* =========================================
-   MOVIE ROW - ESTILO NETFLIX COMPLETO
-========================================= */
+/* MOVIE ROW - ESTILO NETFLIX COMPLETO */
 .movie-row {
   width: 100%;
   margin: 40px 0;
@@ -303,7 +288,7 @@ body {
 /* LISTA DE FILMES */
 .movie-list {
   display: flex;
-  flex-wrap: nowrap; /* impede quebra de linha */
+  flex-wrap: nowrap; 
   justify-content: flex-start;
   gap: 15px;
   overflow-x: auto;
@@ -314,7 +299,7 @@ body {
 
 /* CARD INDIVIDUAL */
 .movie-item {
-  flex: 0 0 18%; /* ocupa proporcionalmente o espaço */
+  flex: 0 0 18%; 
   max-width: 18%;
   border-radius: 8px;
   overflow: hidden;
@@ -371,9 +356,7 @@ body {
   }
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 .footer {
   background-color: #080808;
   color: white;
@@ -413,9 +396,7 @@ body {
   color: #e50914;
 }
 
-/* =========================================
-   MEDIA QUERIES GERAIS
-========================================= */
+/*  MEDIA QUERIES GERAIS */
 @media (min-width: 768px) {
   .footer-menu {
     flex-direction: row;
