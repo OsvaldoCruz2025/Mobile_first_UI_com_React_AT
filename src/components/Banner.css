@@ -86,9 +86,7 @@
   background-color: #f40612;
 }
 
-/* =========================================
-   RESPONSIVIDADE MOBILE
-========================================= */
+/* RESPONSIVIDADE MOBILE */
 @media (max-width: 768px) {
   .banner {
     background-position: top center;
@@ -119,9 +117,7 @@
   }
 }
 
-/* =========================================
-   PEQUENOS AJUSTES PARA IPHONE / ANDROID
-========================================= */
+/*  AJUSTES */
 @media screen and (max-height: 700px) {
   .banner {
     background-attachment: scroll;

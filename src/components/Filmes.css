@@ -1,6 +1,4 @@
-/* =========================================
-   SEÇÃO DE FILMES
-========================================= */
+/*  SEÇÃO DE FILMES */
 .filmes {
   margin: 40px 0;
   width: 100%;
@@ -28,7 +26,7 @@
 }
 
 .filmes-lista::-webkit-scrollbar {
-  display: none; /* esconde a barra de rolagem */
+  display: none; 
 }
 
 /* Cartão de filme */
@@ -57,9 +55,7 @@
   margin-top: 8px;
 }
 
-/* =========================================
-   RESPONSIVIDADE
-========================================= */
+/*  RESPONSIVIDADE */
 @media (max-width: 1200px) {
   .filme-card {
     flex: 0 0 22%;

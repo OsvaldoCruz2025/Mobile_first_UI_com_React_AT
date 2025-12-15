@@ -1,7 +1,7 @@
 import React from "react";
 import "./Filmes.css";
 
-// Importa as imagens da pasta src/img
+
 import top1 from "../img/top1.jpg";
 import top2 from "../img/top2.jpg";
 import top3 from "../img/top3.jpg";
@@ -44,7 +44,7 @@ export default function Filmes() {
     { id: 5, titulo: "Bad Boys Para Sempre", imagem: comed5 },
   ];
 
-  // Seleciona qual lista de filmes mostrar conforme o título
+
   let filmes = [];
   if (title === "Em Alta") filmes = filmesEmAlta;
   else if (title === "Filmes de Ação") filmes = filmesDeAcao;
